@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color:blue;
+}
+
+h2 {
+    color:black;
+}
+
+body{
+    font-size: 25px;
+    background-color:antiquewhite;
+    color: black;
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: brown;
+}

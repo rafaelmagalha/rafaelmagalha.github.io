@@ -1,0 +1,25 @@
+h2{
+    text-align: center;
+}
+
+a:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+body{
+    font-size: medium;
+    background-color: rgb(19, 22, 177);
+    border: 50px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.imagem{
+    image-rendering: auto;
+    text-align: center;
+}
+
+
