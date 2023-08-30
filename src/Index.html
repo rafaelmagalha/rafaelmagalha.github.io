@@ -1,24 +1,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Magalhães</title>
+    <meta charse="UTF-8">
+    <title> Rafael Magalhães </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="center-elrments">
-
-    <header>
-        <strong>RM</strong>
-        <nav>
-            <a herf="#">INICIO</a> >
-            <a herf="#">SOBRE</a>
-            <a herf="#">PROJETOS</a>
-            <a herf="#">ARTIGOS</a>
-            <a herf="#">CONTATOS</a>
+<body>
+    <header class="card">
+        <nav class="nav-items">
+            <strong class="button to-left padding-large">RM</strong>
+            <a class="button to-right padding-large" href="#sobre">SOBRE</a>
+            <a class="button to-right padding-large" href="#projetos">PROJETOS</a>
+            <a class="button to-right padding-large" href="#artigos">ARTIGOS</a>
+            <a class="button to-right padding-large" href="#contato">CONTATO</a>
+            <a class="button to-right padding-large" href="#inicio">INICO</a>
         </nav>
     </header>
+    <div id="inicio" class="content">
 
-</body>
+        <section class="container content center padding-64" id="sobre">
+            <h2 class="wide">Sobre mim</h2>
+            <p class="opacity"><i>Amo a música e tecnlogia</i></p>
+            <p class="justify center">
+                sou aluno do Senai.
+            </p>
+        </section>
+        <section class="container content center padding-64 black-ground" id="projeto">
+            <h2 class="wide">MEUS PROJETOS</h2>
+        </section>
+        <section class="container content center padding-64" id="artigos"></section>
+        <section class="container content center padding-64" id="contato"></section>
+
+    </div>
+    <footer class="container content center">
+        <p class="center opacity wide"> By Rafael Nagalhães</p>
+    </footer>
 
 </html>
