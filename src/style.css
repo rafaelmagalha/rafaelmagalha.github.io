@@ -1,14 +1,4 @@
-header {
-    background-color: black;
-    color: white;
-    height: 50px;
-    width: 100px;
-    position: fixed;
-    z-index: 1;
-    display: block;
-}
-
-body{
+body {
     padding: 0;
     margin: 0;
 }
@@ -16,7 +6,24 @@ body{
 body {
     font-size: 15px;
     line-height: 1.5;
-    font-family: "lato", sans-serif;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    top: 0;
+    background-color: black;
+    color: white;
+    /* height: 50px; */
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: block;
+}
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: inherit;
 }
 
 nav a {
@@ -27,23 +34,24 @@ nav a {
 
 nav a:hover {
     color: rgba(255, 255, 255, 0.812);
+    text-decoration: solid;
 }
 
-.buton {
+.button {
+    text-align: center;
     white-space: normal;
 }
 
-.nav-intems {
+.nav-items {
     padding: 8px 16px;
     width: auto;
     border: none;
     outline: 0;
 }
 
-
 .card {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-        0 20px 10px 0 rgba(0, 0, 0, 0.12);
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .to-right {
@@ -94,11 +102,11 @@ h2 {
     font-size: 30px;
 }
 
-.opacity {
+.opacity{
     opacity: 0.60;
 }
 
-.justify {
+.justify{
     text-align: justify;
 }
 
@@ -109,24 +117,28 @@ h2 {
 .padding-32 {
     padding-top: 32px !important;
     padding-bottom: 32px !important;
-}
+  }
 
-section {
-    max-width: 800px;
+section{
+    max-width:800px;
     box-sizing: inherit;
-}
+  }
 
-section p.justify {
+ section p.justify{
     width: auto;
     margin: auto;
     padding: 10px 100px 10px 100px;
-}
+ } 
 
-#inicio {
-    margin-top: 100px;
-}
+  #inicio{
+    margin-top: 50px;
+  }
 
-.black-ground {
+  .black-ground{
     background-color: black;
     color: white;
-}
+  }
+
+  footer{
+    background-color: gainsboro;
+  }
