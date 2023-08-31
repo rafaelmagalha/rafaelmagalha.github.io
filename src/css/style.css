@@ -11,7 +11,7 @@ body {
 
 header {
     top: 0;
-    background-color: black;
+    background-color: #001449;
     color: white;
     /* height: 50px; */
     width: 100%;
@@ -33,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgba(255, 255, 255, 0.812);
+    color: rgba(8, 145, 224, 0.812);
     text-decoration: solid;
 }
 
@@ -50,8 +50,8 @@ nav a:hover {
 }
 
 .card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.16),
+        0 8px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .to-right {
@@ -71,7 +71,7 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
     max-width: 2000px;
-    margin-top: 46px
+    /* margin-top: 46px */
 }
 
 .container {
@@ -134,8 +134,17 @@ section{
     margin-top: 50px;
   }
 
+  .letra-color{
+    background-color: rgb(83, 81, 81);
+  }
+
+  .azul-4099e9{
+    background-color: #4099e9;
+    color: white;
+  }
+
   .black-ground{
-    background-color: black;
+    background-color: #4099e9;
     color: white;
   }
 
