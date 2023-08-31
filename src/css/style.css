@@ -7,6 +7,8 @@ body {
     font-size: 15px;
     line-height: 1.5;
     font-family: "Lato", sans-serif;
+    background-color: #4099e9;
+    
 }
 
 header {
@@ -149,5 +151,5 @@ section{
   }
 
   footer{
-    background-color: gainsboro;
+    background-color: #ebf7f8;
   }
