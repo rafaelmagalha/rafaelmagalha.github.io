@@ -22,6 +22,12 @@ header {
     display: block;
 }
 
+.Img{
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
 nav {
     overflow: hidden;
     width: 100%;
@@ -152,4 +158,54 @@ section{
 
   footer{
     background-color: #ebf7f8;
+  }
+
+  .cardBox {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    max-width:300px;
+    max-height: 200px;
+    text-align: center;
+    flex-shrink: 1;
+  }
+
+
+  .btn-card {
+    background-color: black;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .black-ground .cardBox{
+    background-color: white;
+    color: black;
+  }
+
+  .btn-card:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo{
+    font-size: 1.7em;
+  }
+
+  #sobre{
+    padding: 0.01em 0px;
   }
