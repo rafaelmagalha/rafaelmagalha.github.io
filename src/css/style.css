@@ -1,98 +1,99 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: "Lato", sans-serif;
-    background-color: #4099e9;
-    
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  background-color: #4099e9;
+
 }
 
-header {
-    top: 0;
-    background-color: #001449;
-    color: white;
-    /* height: 50px; */
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    display: block;
+.header {
+  top: 0;
+  background-color: #001449;
+  color: white;
+  /* height: 50px; */
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: block;
 }
 
-.Img{
-    height: 100px;
-    width: 100px;
-    float: left;
+.Img {
+  height: 100px;
+  width: 100px;
+  float: left;
 }
 
-nav {
-    overflow: hidden;
-    width: 100%;
-    box-sizing: inherit;
+.nava {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: inherit;
 }
 
 nav a {
-    color: inherit;
-    text-decoration: none;
-    font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
 }
 
 nav a:hover {
-    color: rgba(8, 145, 224, 0.812);
-    text-decoration: solid;
+  color: rgba(8, 145, 224, 0.812);
+  text-decoration: solid;
 }
 
-.button {
-    text-align: center;
-    white-space: normal;
+.button1 {
+  text-align: center;
+  white-space: normal;
+
 }
 
 .nav-items {
-    padding: 8px 16px;
-    width: auto;
-    border: none;
-    outline: 0;
+  padding: 8px 16px;
+  width: auto;
+  border: none;
+  outline: 0;
 }
 
 .card {
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.16),
-        0 8px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.16),
+    0 8px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .to-right {
-    float: right !important;
+  float: right !important;
 }
 
 .to-left {
-    float: left !important;
+  float: left !important;
 }
 
 
 .padding-large {
-    padding: 12px 24px !important;
+  padding: 12px 24px !important;
 }
 
 .content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 2000px;
-    /* margin-top: 46px */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2000px;
+  /* margin-top: 46px */
 }
 
 .container {
-    padding: 0.01em 16px;
+  padding: 0.01em 16px;
 }
 
 .padding-64 {
-    padding-top: 64px !important;
-    padding-bottom: 64px !important
+  padding-top: 64px !important;
+  padding-bottom: 64px !important
 }
 
 .wide {
-    letter-spacing: 4px;
+  letter-spacing: 4px;
 }
 
 h1,
@@ -101,111 +102,137 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: 400;
-    margin: 10px 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
 h2 {
-    font-size: 30px;
+  font-size: 30px;
+  color: white;
 }
 
-.opacity{
-    opacity: 0.60;
+.opacity {
+  opacity: 0.60;
 }
 
-.justify{
-    text-align: justify;
+.justify {
+  text-align: justify;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .padding-32 {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
-  }
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
 
-section{
-    max-width:800px;
-    box-sizing: inherit;
-  }
+section {
+  max-width: 800px;
+  box-sizing: inherit;
+}
 
- section p.justify{
-    width: auto;
-    margin: auto;
-    padding: 10px 100px 10px 100px;
- } 
+section p.justify {
+  width: auto;
+  margin: auto;
+  padding: 10px 100px 10px 100px;
+}
 
-  #inicio{
-    margin-top: 50px;
-  }
+#inicio {
+  margin-top: 50px;
+}
 
-  .letra-color{
-    background-color: rgb(83, 81, 81);
-  }
+.letra-color {
+  background-color: rgb(83, 81, 81);
+}
 
-  .azul-4099e9{
-    background-color: #4099e9;
-    color: white;
-  }
+.azul-4099e9 {
+  background-color: #4099e9;
+  color: white;
+}
 
-  .black-ground{
-    background-color: #4099e9;
-    color: white;
-  }
+.black-ground {
+  background-color: #4099e9;
+  color: white;
+}
 
-  footer{
-    background-color: #ebf7f8;
-  }
+footer {
+  background-color: #ebf7f8;
+}
 
-  .cardBox {
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    height: 200px;
-    max-width:300px;
-    max-height: 200px;
-    text-align: center;
-    flex-shrink: 1;
-  }
+.cardBox {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  height: 230px;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  flex-shrink: 1;
+}
 
 
-  .btn-card {
-    background-color: black;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-  }
+.btn-card {
+  background-color: black;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  .black-ground .cardBox{
-    background-color: white;
-    color: black;
-  }
+.black-ground .cardBox {
+  background-color: white;
+  color: black;
+}
 
-  .btn-card:hover {
-    background-color: inherit;
-    color: inherit;
-  }
+.btn-card:hover {
+  background-color: inherit;
+  color: inherit;
+}
 
-  .card-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 
-  #logo{
-    font-size: 1.7em;
-  }
+#logo {
+  font-size: 1.7em;
+}
 
-  #sobre{
-    padding: 0.01em 0px;
-  }
+#sobre {
+  padding: 0.01em 0px;
+}
+
+.cnt{
+  width: 100%;
+  background-color:  #C0C0C0 ;
+  
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 1;
+  
+}
+
+.card-container1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+#ima-r{
+margin-left:838;
+
+
+}
