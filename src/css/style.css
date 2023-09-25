@@ -1,6 +1,5 @@
 body {
-  padding: 0;
-  margin: 0;
+ 
 }
 
 body {
@@ -8,7 +7,8 @@ body {
   line-height: 1.5;
   font-family: "Lato", sans-serif;
   background-color: #4099e9;
-
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -23,8 +23,8 @@ body {
 }
 
 .Img {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   float: left;
 }
 
@@ -130,7 +130,6 @@ h2 {
 }
 
 section {
-  max-width: 800px;
   box-sizing: inherit;
 }
 
@@ -232,7 +231,9 @@ footer {
   justify-content: flex-start;
 }
 #ima-r{
-margin-left:838;
+display: flex;
+align-items: center;
+justify-content: center;
 
 
 }

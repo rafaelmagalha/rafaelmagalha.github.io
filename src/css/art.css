@@ -1,0 +1,123 @@
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    background-color: #4099e9;
+    padding: 0;
+    margin: 0;
+  }
+
+.content-group {
+    margin-top: 50px;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.left-side-bar {
+    float: left;
+    margin-top: 50px;
+    background-color: white;
+    width: 230px;
+    height: auto;
+    margin-top: 60px;
+    border-radius: 18px;
+    position: fixed;
+    left: 25px;
+    
+}
+
+.left-side-bar button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+
+}
+
+.borde-bottom{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.borde-top{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.left-side-bar button:hover {
+    background-color: rgb(194, 194, 194);
+    color: rgb(3, 1, 1);
+}
+
+.left-side-bar button.active {
+    background-color: rgb(194, 194, 194);
+    color: rgb(3, 1, 1);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles {
+    flex: 1;
+    margin: 60px 40px 0px 0px;
+    width: auto;
+    height: auto;
+    left: 350px;
+    position: fixed;
+}
+
+section.cardBox2 {
+    color: black;
+    background-color: white; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 50px;
+    padding: 0px 12px;
+    height: 790px;
+    width: auto;
+    overflow-y: scroll;
+
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+
+.txtAudi{
+text-align: justify;
+max-width: 1200px;
+margin-right: 20px;
+margin-left: 20px;
+
+
+}
+
+.cardBox2 {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 1;
+  }
+
