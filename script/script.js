@@ -14,5 +14,3 @@ function openContent(event, nomeArtigo) {
   
   // buscando o elemento com ID aberto por padrão
   document.getElementById("abertoPorPadrao").click();
-
-
