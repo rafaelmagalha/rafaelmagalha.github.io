@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+
+<body>
+    Nome:<br>
+
+    <input type="text" id="nome">
+    <button onclick="salvar()"> salvar </button>
+
+    <p id="result"></p>
+
+    Idade: <br>
+
+    <input type="text" id="idade">
+    <button onclick="idade()"> Adulto ou idoso </button>
+
+    <p id="resulte"></p>
+
+      Comparador de números:<br>
+
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button onclick="comparador()"> comparar </button>
+
+    <p id="resultt"></p>
+
+        
+    </imput>
+
+    <script>
+
+        function salvar() {
+
+            let nome = document.getElementById('nome').value;
+
+            document.getElementById('result').innerText = nome;
+        }
+
+        function idade() {
+
+            let idade = document.getElementById('idade').value;
+
+
+            if (idade < 18) {
+                document.getElementById('resulte').innerText = "Menor de iade";
+            }
+
+            else if (idade > 65) {
+                document.getElementById('resulte').innerText = "É uma pesssoa idosa";
+            }
+
+            else {
+
+                document.getElementById('resulte').innerText = "É uma pesssoa aduta";
+
+            }
+
+
+
+        }
+
+        function comparador(){
+
+            let numc1 = document.getElementById('nun1').value;
+            let numc2 = document.getElementById('nun2').value;
+
+            if(numc1 > numc2 ){
+            document.getElementById('resultt').innerText = numc1 + "é maior que" + numc2;
+            }
+            else if(numc2 > numc1){
+            document.getElementById('resultt').innerText = numc2 + "é maior que" + numc1;
+            }
+
+            else{
+                document.getElementById('resultt').innerText = numc1 + "são iguais" + numc2;
+
+            }
+
+        
+
+
+
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
