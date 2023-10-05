@@ -18,19 +18,77 @@
     Idade: <br>
 
     <input type="text" id="idade">
-    <button onclick="idade()"> Adulto ou idoso </button>
+    <button onclick="idade()"> adulto ou idoso </button>
 
     <p id="resulte"></p>
 
-      Comparador de números:<br>
-
-    <input type="text" id="num1">
+    Comparador de números:<br>
+    <label for="num1">N/1º</label>
+    <input type="text" id="num1"><br>
+    <label for="num2">N/2º</label>
     <input type="text" id="num2">
     <button onclick="comparador()"> comparar </button>
 
     <p id="resultt"></p>
 
-        
+    É divisível ou não: <br>
+    <label for="num3">N/1º</label>
+    <input type="text" id="num3"> <br>
+    <label for="num4">N/2º</label>
+    <input type="text" id="num4">
+    <button onclick="divisibilidade()"> são divisíveis </button>
+
+    <p id="resullt"></p>
+
+    Verificação de temperatura: <br>
+    <label for="num5">valor/temp°c:</label>
+    <input type="text" id="num5">
+    <button onclick="temp()"> verificar temperatura </button>
+
+    <p id="resultTmp"></p>
+
+    Verificação de notas: <br><br>
+    Matemática:<br>
+    <label for="numb1">1º/B:</label>
+    <input type="text" id="numb1"><br>
+    <label for="numb2">2º/B:</label>
+    <input type="text" id="numb2"><br>
+    <label for="numb3">3º/B:</label>
+    <input type="text" id="numb3"><br>
+    <label for="numb4">4º/B:</label>
+    <input type="text" id="numb4">
+    <button onclick="mat()"> verificar nota </button><br><br>
+
+    <p id="resultMt"></p>
+
+
+    História:<br>
+    <label for="numb5">1º/B:</label>
+    <input type="text" id="numb5"><br>
+    <label for="numb6">2º/B:</label>
+    <input type="text" id="numb6"><br>
+    <label for="numb7">3º/B:</label>
+    <input type="text" id="numb7"><br>
+    <label for="numb8">4º/B:</label>
+    <input type="text" id="numb8">
+    <button onclick="hist()"> verificar nota </button><br><br>
+
+    <p id="resultHt"></p>
+
+
+    Química:<br>
+    <label for="numb9">1º/B:</label>
+    <input type="text" id="numb9"><br>
+    <label for="numb10">2º/B:</label>
+    <input type="text" id="numb10"><br>
+    <label for="numb11">3º/B:</label>
+    <input type="text" id="numb11"><br>
+    <label for="numb12">4º/B:</label>
+    <input type="text" id="numb12">
+    <button onclick="qmc()"> verificar nota </button><br>
+
+    <p id="resultQm"></p>
+
     </imput>
 
     <script>
@@ -48,16 +106,16 @@
 
 
             if (idade < 18) {
-                document.getElementById('resulte').innerText = "Menor de iade";
+                document.getElementById('resulte').innerText = " Menor de iade ";
             }
 
             else if (idade > 65) {
-                document.getElementById('resulte').innerText = "É uma pesssoa idosa";
+                document.getElementById('resulte').innerText = " É uma pesssoa idosa ";
             }
 
             else {
 
-                document.getElementById('resulte').innerText = "É uma pesssoa aduta";
+                document.getElementById('resulte').innerText = " É uma pesssoa aduta ";
 
             }
 
@@ -65,24 +123,140 @@
 
         }
 
-        function comparador(){
+        function comparador() {
 
-            let numc1 = parseFloat(document.getElementById ('num1') .value);
+            let numc1 = parseFloat(document.getElementById('num1').value);
             let numc2 = parseFloat(document.getElementById('num2').value);
 
-            if(numc1 > numc2 ){
-            document.getElementById('resultt').innerText = numc1 + "é maior que" + numc2;
+            if (numc1 > numc2) {
+                document.getElementById('resultt').innerText = numc1 + " é maior que " + numc2;
             }
-            else if(numc2 > numc1){
-            document.getElementById('resultt').innerText = numc2 + "é maior que" + numc1;
+            else if (numc2 > numc1) {
+                document.getElementById('resultt').innerText = numc2 + " é maior que " + numc1;
             }
 
-            else{
-                document.getElementById('resultt').innerText = numc1 + "são iguais" + numc2;
+            else {
+                document.getElementById('resultt').innerText = numc1 + " são iguais " + numc2;
 
             }
-            
+
         }
+
+        function divisibilidade() {
+
+            let numd3 = parseFloat(document.getElementById('num3').value);
+            let numd4 = parseFloat(document.getElementById('num4').value);
+
+            if (numd3 % numd4 == 0) {
+
+                document.getElementById('resullt').innerText = numd3 + " é divisível " + numd4;
+
+            }
+            else {
+
+                document.getElementById('resullt').innerText = numd3 + " não é divisível " + numd4;
+
+            }
+
+
+
+
+
+
+
+
+
+        }
+
+        function temp() {
+
+            let tmp = document.getElementById('num5').value;
+
+
+            if (tmp < 17) {
+                document.getElementById('resulTmp').innerText = " Está friu de mais  ";
+            }
+
+            else if (tmp < 35) {
+                document.getElementById('resultTmp').innerText = " Está agradavél ";
+            }
+
+            else {
+
+                document.getElementById('resultTmp').innerText = " Está muito quente ";
+
+            }
+
+
+
+        }
+
+
+
+
+        function mat() {
+
+            let numbp1 = parseFloat(document.getElementById('numb1').value);
+            let numbp2 = parseFloat(document.getElementById('numb2').value);
+            let numbp3 = parseFloat(document.getElementById('numb3').value);
+            let numbp4 = parseFloat(document.getElementById('numb4').value);
+
+            if (numbp1 + numbp2 + numbp3 + numbp4 >= 60) {
+
+                document.getElementById('resultMt').innerText = " Está aprovado ";
+            }
+
+            else {
+
+                document.getElementById('resultMt').innerText = " Está reprovado ";
+            }
+
+
+
+        }
+
+        function hist() {
+
+            let numbp5 = parseFloat(document.getElementById('numb5').value);
+            let numbp6 = parseFloat(document.getElementById('numb6').value);
+            let numbp7 = parseFloat(document.getElementById('numb7').value);
+            let numbp8 = parseFloat(document.getElementById('numb8').value);
+
+            if (numbp5 + numbp6 + numbp7 + numbp8 >= 60) {
+
+                document.getElementById('resultHt').innerText = " Está aprovado ";
+            }
+
+            else {
+
+                document.getElementById('resultHt').innerText = " Está reprovado ";
+            }
+
+
+
+        }
+
+        function qmc() {
+
+            let numbp9 = parseFloat(document.getElementById('numb9').value);
+            let numbp10 = parseFloat(document.getElementById('numb10').value);
+            let numbp11 = parseFloat(document.getElementById('numb11').value);
+            let numbp12 = parseFloat(document.getElementById('numb12').value);
+
+            if (numbp9 + numbp10 + numbp11 + numbp12 >= 60) {
+
+                document.getElementById('resultQm').innerText = " Está aprovado ";
+            }
+
+            else {
+
+                document.getElementById('resultQm').innerText = " Está reprovado ";
+            }
+
+
+
+        }
+
 
 
 
