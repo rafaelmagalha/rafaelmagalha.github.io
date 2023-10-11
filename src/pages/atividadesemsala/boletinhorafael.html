@@ -1,11 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> BOLETINHO </title>
+<link rel="stylesheet" href="script-boletim.js">
+
 </head>
 <body>
 
+    <div class="row">
+        <div class="col-4">
+            <h4>Boletinho</h4>
+            <div class="row-cols-4" id="materia1">
+                <div class="col">
+                    <label for="nomeUsuario">Nome do aluno</label>
+                    <input type="text" id="nomeUsuario">
+                </div><br>
+                <div class="col">
+                    <label for="nomeInstituicao">Escola/Instituicao</label>
+                    <input type="text" id="nomeInstituicao">
+                </div><br>
+                <div class="col-2 p-md-4">
+                    <label for="nomeMateria">Matéria</label>
+                    <input type="text" id="nomeMateria">
+                </div><br>
+                <div class="col-2 p-md-4 input-group">
+                    <input type="number"><br>
+                    <input type="number"><br>
+                    <input type="number"><br>
+                    <input type="number"><br>
+                </div>
+            </div>
+            <button onclick="save()">Verificar Notas</button>
+            <p class="m-3 p-2" id="resultNotas"></p>
+        </div>
+    </div>
+
 </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
