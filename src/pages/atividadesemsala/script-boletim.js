@@ -1,5 +1,4 @@
 
-
 let materia = { id: 0, nome: "", notas: [], total: 0, printInfo: "" };
 let materias = [];
 let user = {nome: "",instituicao:"", curso:""};
