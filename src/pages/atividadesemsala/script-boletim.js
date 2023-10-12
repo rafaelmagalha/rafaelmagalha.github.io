@@ -49,3 +49,5 @@ function isAprovadoOuReprovado(valor) {
         return "REPROVADO"
     }
 }
+
+<button onclick="save()">Verificar Notas</button>
