@@ -14,7 +14,23 @@
     <!-- <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="./boletim.css"> -->
 
+    <style>
+        .input_group {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .input-group input {
+            margin: 10px 5px 10px 5px;
+        }
+    </style>
+
 </head>
+
+
 
 <body>
 
@@ -46,7 +62,7 @@
 
             <div class="col-8">
                 <div class="card p-3 border-info">
-                    <div class="col-2 p-md-4">
+                    <div class="col-2 p-md-4u">
                         <label for="nomeMateria">Matéria</label>
 
                         <select name="nomeMateria" id="nomeMateria">
@@ -54,25 +70,29 @@
                             <option value="Português">Português</option>
                             <option value="Química">Química</option>
                             <option value="Biologia">Biologia</option>
+                            <option value="Inglês">Inglês</option>
+                            <option value="História">História</option>
+                            <option value="TI">TI</option>
                         </select>
                     </div>
-                    <div class="col-2 p-md-4u">
+                    <div class="input_group">
                         <input type="number">
                         <input type="number">
                         <input type="number">
                         <input type="number">
                     </div>
-
-                    <button onclick="save()">Verificar Notas</button>
-                    <p class="m-3 p-2" id="resultNotas"></p>
-
                 </div>
+
+                <button onclick="save()">Verificar Notas</button>
+                <p class="m-3 p-2" id="resultNotas"></p>
 
             </div>
 
         </div>
 
+        </div>
         <script src="./script-boletim.js"></script>
+
         <!-- <script>
             let materia = { id: 0, nome: "", notas: [], total: 0, printInfo: "" };
             let materias = [];

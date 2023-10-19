@@ -4,7 +4,7 @@ let materias = [];
 let user = {nome: "",instituicao:"", curso:""};
 function save() {
     
-    let inputNotas = document.querySelectorAll("div.input-group > input");
+    let inputNotas = document.querySelectorAll("div.input_group > input");
     let notas = [];
     let totalNotas = 0;
     user.nome = nomeUsuario.value;
