@@ -1,8 +1,30 @@
-import { formNewUser } from "./view/form-new-user.js";
-const controller = {
-    iniciar: ()=>{
-        formNewUser.build()
-    }
+import { viewController } from "./view/viewController.js";
+import { Usuario } from "./model/usuario.model.js"
 
-}
-export {controller};
+let data = [];
+
+// const loadData = ()=> {
+
+// }
+const saveData = (event) => {
+    event.preventDefault();
+    const newData = new Usuario(
+        nome.value,
+        idade.value,
+        login.value,
+        senha.value
+    );
+
+    data.push(newData);
+
+    viewController.update(data, new Usuario("",0,"",""));
+  };
+  
+  const controller = {
+    iniciar: () => {
+      viewController.build();
+      const form = document.getElementById("signForm");
+      form.addEventListener("submit", saveData);
+    },
+  };
+export { controller };

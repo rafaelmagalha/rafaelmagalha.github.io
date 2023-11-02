@@ -1,10 +1,10 @@
 const formNewUser = {
     build:()=>{
-        const root = document.getElementById('root');
-        const formTemplate = document.createElement('form');
-        formTemplate.className = "form-control";
-        formTemplate.setAttribute("id","signForm")
-        formTemplate.innerHTML = `
+       const root = document.getElementById('root');
+       const formTemplate = document.createElement('form');
+       formTemplate.className = 'form-control';
+       formTemplate.setAttribute("id","signForm");
+       formTemplate.innerHTML = `
         <h3 class="mt-2 mb-4"> Cadastro de novo usuário </h3>
 
        <label for="nome" class="form-label">Nome</label>
@@ -22,16 +22,14 @@ const formNewUser = {
         <button type="submit" class="btn btn-primary mt-4">Salvar</button>
        
         `
-
-        root.appendChild(formTemplate);
-     },
-     update:(user)=>{
+       root.appendChild(formTemplate);
+    },
+    update:(user)=>{
         //ATULIZAR OS VALORES DE INPUTS PARA OS VALORES DO USUÁRIO SELECIONADO
         nome.value = user.getNome();
         idade.value = user.getIdade();
         login.value = user.getLogin();
         senha.value = user.getSenha();
     }
-
 }
 export {formNewUser}
