@@ -17,7 +17,9 @@ const handlSubmit = (event) => {
   } else if (submitState == submitType.UPDADE) {
 
     updateUser(user);
-    btnsub.innerText = "NEW"
+    submitState = submitType.NEW
+    btnsub.innerText = "Save"
+
 
   }
   viewController.update(data, new Usuario("", null, "", ""))
@@ -39,7 +41,10 @@ const deletUser = (index)=>{
 
 const clickEsquerdo = (event) => {
   currentId = event.target.closest('tr').id.split("")[4];
-  alert(`clicou com o botão esquerdo, e o ${data[currentId].getNome().toUpperCase()} será carregado para edição`)
+  alert(`clicou com o botão esquerdo, e o ${data[currentId].getNome().toUpperCase()} será carregado para edição`);
+  viewController.updatForm(data[currentId]);
+  subnitState = submitType.UPDADE;
+  btnsub.innerText = "Update";
 }
 const clickDireito = (event) => {
   event.preventDefault();

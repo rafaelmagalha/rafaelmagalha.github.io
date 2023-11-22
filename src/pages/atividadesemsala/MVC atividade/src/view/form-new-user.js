@@ -7,7 +7,7 @@ const formNewUser = {
         formTemplate.innerHTML = `
         <h3 class="mt-2 mb-4"> Cadastro de novo usuário </h3>
 
-       <label for="nome" class="form-label">Nome</label>
+       <label for="nome" class="form-label">Nome</label>    
         <input class="form-control" type="text" id="nome">
        
        <label for="idade" class="form-label">Idade</label>
